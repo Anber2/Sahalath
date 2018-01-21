@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPurple">#4D3976</color>
+    <color name="colorPurpleLine">#311C5D</color>
+    <color name="color_progress">#110923</color>
+    <color name="blueDarkForWheel">#483793</color>
+
+    <color name="color_theme">#937bcb</color>
+    <color name="color_black_scroll">#90000000</color>
+
+    <color name="page_title_color">#cc483793</color>
+
+    <color name="item_color_theme_transparent">#cc311c5d</color>
+
+    <color name="spinner_bg">#b3b3b3</color>
+
+    <color name="white_transparent">#ccffffff</color>
+    <color name="black_tarns_layout">#cc000000</color>
+    <color name="black_tarns_layout_dark">#cc000000</color>
+    <color name="black_tarns_light_layout">#60000000</color>
+    <color name="hint_color">#666</color>
+    
+    <color name="color_all_rest">#473790</color>
+    <color name="color_new_rest">#5844A7</color>
+    <color name="color_most_selling">#6A55BC</color>
+    <color name="color_search">#806BD2</color>
+
+    <color name="rating_five">#24ff00</color>
+    <color name="rating_four_three">#28df0a</color>
+    <color name="rating_two">#ebcd00</color>
+    <color name="rating_one">#ff0000</color>
+
+    <color name="offline_red_normal">#CD1716</color>
+    <color name="offline_red_pressed">#ff1700</color>
+    <color name="online_green_normal">#207903</color>
+    <color name="online_green_pressed">#20aa03</color>
+</resources>

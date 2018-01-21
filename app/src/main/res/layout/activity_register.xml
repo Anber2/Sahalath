@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/appbar_sign_in"
+        layout="@layout/appbar_sahalath" />
+
+    <TextView
+        style="@style/CommonTitle"
+        android:text="@string/register" />
+
+    <ScrollView
+        style="@style/scrollBarDefaultTransparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_reg_first_name"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/first_name" />
+
+            <EditText
+                android:id="@+id/et_reg_last_name"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/last_name" />
+
+
+            <EditText
+                android:id="@+id/et_reg_mail"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/emailId" />
+
+            <EditText
+                android:id="@+id/et_reg_password"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/password" />
+
+            <EditText
+                android:id="@+id/et_reg_confirm_password"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/confirm_password" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_spinner_common"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_reg_communication"
+                    style="@style/SpinnerCommonTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:popupBackground="@color/white_transparent"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_reg_telephone"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/mobile_no" />
+
+            <EditText
+                android:id="@+id/et_reg_home_phone_number"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/home_number" />
+
+            <EditText
+                android:id="@+id/et_reg_paci_number"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/paci_number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_spinner_common"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_reg_gender"
+                    style="@style/SpinnerCommonTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="24dp"
+                    android:popupBackground="@color/white_transparent"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_spinner_common"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_reg_occupation"
+                    style="@style/SpinnerCommonTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="24dp"
+
+                    android:popupBackground="@color/white_transparent"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:gravity="center_vertical"
+                android:text="@string/address"
+                android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                android:textColor="@android:color/white" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_address_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <RadioButton
+                    android:id="@+id/radio_btn_apartment"
+                    style="@style/textColorAndStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/color_all_rest"
+                    android:drawableStart="@drawable/ic_apartment"
+                    android:drawablePadding="2dp"
+                    android:text="@string/apartments" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_house"
+                    style="@style/textColorAndStyle"
+                    android:buttonTint="@color/color_all_rest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_home_address"
+                    android:drawablePadding="2dp"
+                    android:text="@string/house" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_office"
+                    style="@style/textColorAndStyle"
+                    android:layout_width="wrap_content"
+                    android:buttonTint="@color/color_all_rest"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_office"
+                    android:drawablePadding="2dp"
+                    android:text="@string/office" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_reg_flat_name"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/flat_no" />
+
+            <EditText
+                android:id="@+id/et_reg_block"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/block" />
+
+            <EditText
+                android:id="@+id/et_reg_street"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/street" />
+
+            <EditText
+                android:id="@+id/et_reg_avenue"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/avenue" />
+
+            <EditText
+                android:id="@+id/et_reg_building"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/building" />
+
+            <EditText
+                android:id="@+id/et_reg_floor"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/floor" />
+
+            <EditText
+                android:id="@+id/et_reg_apart_no"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/apartment_number" />
+
+            <EditText
+                android:id="@+id/et_reg_add_mob_num"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/mobile_no"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_reg_add_home_num"
+                style="@style/ContactUsPageEditText"
+                android:layout_marginTop="12dp"
+                android:hint="@string/home_number"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_reg_directions"
+                style="@style/ContactUsPageEditText"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="start|top"
+                android:hint="@string/directions"
+                android:minLines="3" />
+
+            <Spinner
+                android:id="@+id/spinner_reg_place"
+                style="@style/SpinnerCommonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:spinnerMode="dropdown"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_reg_submit"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="26dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_submit_register_act"
+                    style="@style/ThemedButton"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="@string/submit" />
+
+                <Button
+                    android:id="@+id/btn_reset_register_act"
+                    style="@style/ThemedButton"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="@string/reset" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

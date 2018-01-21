@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "154182237707",
+    "firebase_url": "https://sahalat-a15c6.firebaseio.com",
+    "project_id": "sahalat-a15c6",
+    "storage_bucket": "sahalat-a15c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154182237707:android:76aa2d5e6516d9bd",
+        "android_client_info": {
+          "package_name": "com.mawaqaa.sahalath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154182237707-lrd3b8rlud3qb6mjo5kpot16gre4ceoq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWxMk3T07vrP2fIbQ_X4jJeMEotfDPXeA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_pending_order_title"
+        style="@style/CommonTitle"
+        android:text="@string/pending_order" />
+
+    <ListView
+        android:id="@+id/list_view_pending_order"
+        style="@style/scrollBarDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pending_order_title"
+        android:layout_marginBottom="44dp"
+        android:divider="@color/color_theme"
+        android:dividerHeight="1dp"
+        android:padding="16dp"
+        android:visibility="visible"></ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_pending_order_button"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_accept_order"
+            style="@style/ThemedButton"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/accept" />
+
+        <Button
+            android:id="@+id/btn_reject_order"
+            style="@style/ThemedButton"
+            android:layout_marginStart="16dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/reject" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_driver_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_tarns_layout_dark"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/textColorAndStyle"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_home_driver_name"
+            style="@style/textColorAndStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="ANSON K V"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_driver_home_offline"
+            style="@style/textColorAndStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_offline_btn"
+            android:text="@string/offline" />
+
+        <Button
+            android:id="@+id/btn_driver_home_online"
+            style="@style/textColorAndStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_online_btn"
+            android:text="@string/online" />
+    </LinearLayout>
+</RelativeLayout>

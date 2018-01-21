@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/CommonTitle"
+        android:text="@string/dynamic_search" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/et_search_keyword"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="@string/enter_keyword"
+        android:paddingStart="4dp"
+        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular" />
+
+    <Spinner
+        style="@style/SpinnerCommonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spinner_search_category"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/btn_dynamic_search"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_bg_theme_light"
+        android:text="@string/search"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_result_count"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:text="Found 20 results for Keyword"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/list_view_dynamic_search"
+        style="@style/scrollBarDefault"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_theme"
+        android:dividerHeight="1dp"
+        android:padding="12dp">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_single_food_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+
+
+        <com.joooonho.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_rest_food_item"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food_item"
+            app:sriv_border_color="#008fea"
+            app:sriv_left_bottom_corner_radius="4dip"
+            app:sriv_left_top_corner_radius="4dip"
+            app:sriv_oval="false"
+            app:sriv_right_bottom_corner_radius="4dip"
+            app:sriv_right_top_corner_radius="4dip" />
+
+
+        <TextView
+            android:id="@+id/tv_rest_food_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_rest_food_item"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/img_rest_food_item"
+            android:text="PUDDING"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rest_food_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/img_rest_food_item"
+            android:text="KD 125.00"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_quantity_food_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_rest_food_item"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/img_rest_food_item"
+            android:text="@string/quantity"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Bold"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinner_food_item_quantity"
+            style="@style/SpinnerQuantityTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignTop="@id/tv_quantity_food_item"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/tv_quantity_food_item" />
+
+        <Button
+            android:id="@+id/btn_add_to_cart"
+            style="@style/ThemedButton"
+            android:layout_alignTop="@id/tv_quantity_food_item"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/spinner_food_item_quantity"
+            android:text="@string/add_to_cart" />
+    </RelativeLayout>
+</LinearLayout>

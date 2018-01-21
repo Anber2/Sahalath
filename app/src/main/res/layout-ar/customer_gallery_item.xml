@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_tarns_layout_dark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/gallery_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_gallery"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/ic_close_gallery" />
+
+        <com.joooonho.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gallery_close"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            app:sriv_border_color="@android:color/white"
+            app:sriv_border_width="4dp"
+            app:sriv_left_bottom_corner_radius="4dip"
+            app:sriv_left_top_corner_radius="4dip"
+            app:sriv_oval="false"
+            app:sriv_right_bottom_corner_radius="4dip"
+            app:sriv_right_top_corner_radius="4dip" />
+
+    </RelativeLayout>
+
+</LinearLayout>

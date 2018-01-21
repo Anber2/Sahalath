@@ -1,0 +1,207 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- - - - - - - - - - - -  - - -Custom Fonts - - - - - - - - - - - -->
+
+    <style name="TextAppearance.FontPath.Roboto.Bold" parent="android:TextAppearance">
+        <item name="fontPath">fonts/RobotoCondensed-Bold.ttf</item>
+    </style>
+
+    <style name="TextAppearance.FontPath.Roboto.BoldItalic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/RobotoCondensed-BoldItalic.ttf</item>
+    </style>
+
+    <style name="TextAppearance.FontPath.Roboto.Italic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/RobotoCondensed-Italic.ttf</item>
+    </style>
+
+    <style name="TextAppearance.FontPath.Roboto.LightItalic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/RobotoCondensed-LightItalic.ttf</item>
+    </style>
+
+    <style name="TextAppearance.FontPath.Roboto.Regular" parent="android:TextAppearance">
+        <item name="fontPath">fonts/RobotoCondensed-Regular.ttf</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- - - - - - - - - - - -  - - -spinner_wait - - - - - - - - - - - -->
+
+    <style name="wait_spinner_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- - - - - - - - - - - -  - - -Drawer Layout - - - - - - - - - - - -->
+    <style name="DrawerScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorPurple</item>
+    </style>
+
+    <style name="DrawerLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@color/colorPurple</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="DrawerTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginLeft">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="DrawerLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorPurpleLine</item>
+    </style>
+
+
+    <style name="CommonTitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath.Roboto.Regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_common_title</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="scrollBarDefaultTransparent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scrollbarSize">4dp</item>
+        <item name="android:scrollbarTrackVertical">@drawable/scrollbar_track_vertical</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_thumb</item>
+    </style>
+
+    <style name="scrollBarDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:background">@drawable/bg_scrollview</item>
+        <item name="android:scrollbarSize">4dp</item>
+        <item name="android:scrollbarTrackVertical">@drawable/scrollbar_track_vertical</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_thumb</item>
+    </style>
+
+
+    <style name="rating_bar_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:numStars">5</item>
+        <item name="android:progressDrawable">@drawable/custom_rating_bar</item>
+        <item name="android:stepSize">1</item>
+    </style>
+
+    <style name="SpinnerQuantityTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/bg_spinner_quantity</item>
+    </style>
+
+    <style name="SpinnerCommonTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/bg_edit_text</item>
+    </style>
+
+    <style name="ThemedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@drawable/selector_bg_theme_light</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath.Roboto.Regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ContactUsPageEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath.Roboto.Regular</item>
+    </style>
+
+    <style name="textColorAndStyle">
+        <item name="android:textAppearance">@style/TextAppearance.FontPath.Roboto.Regular</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="serviceRequestTextFields">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath.Roboto.Regular</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="imageGalleryList">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="demo_progress_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+
+    <style name="sbAccountTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPath.Roboto.Regular</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+</resources>

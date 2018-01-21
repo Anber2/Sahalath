@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame_outer_search"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-120dp">
+
+        <com.mawaqaa.sahalath.customviews.SearchCircleLayoutOuter
+            android:id="@+id/circle_layout_outer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_outer_serach_trans"
+            android:visibility="visible"
+            custom:firstChildPosition="East"
+            custom:radius="156dp">
+
+        </com.mawaqaa.sahalath.customviews.SearchCircleLayoutOuter>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/bg_search_circle_outer" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/search_frame"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-70dp">
+
+        <com.mawaqaa.sahalath.customviews.SearchCircleLayout
+            android:id="@+id/circle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_search_inner"
+            custom:firstChildPosition="East">
+
+        </com.mawaqaa.sahalath.customviews.SearchCircleLayout>
+    </FrameLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/frame_outer_search"
+        android:orientation="horizontal"
+        android:weightSum="2">-->
+
+    <ImageView
+        android:id="@+id/img_home_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:layout_toEndOf="@id/frame_outer_search"
+        android:background="@drawable/ic_home_arrow" />
+
+    <ImageButton
+        android:id="@+id/btn_home_search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/img_home_arrow"
+        android:background="@drawable/ic_home_search" />
+
+    <ImageButton
+        android:id="@+id/btn_home_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/btn_home_search"
+        android:background="@drawable/ic_location_home" />
+
+
+</RelativeLayout>

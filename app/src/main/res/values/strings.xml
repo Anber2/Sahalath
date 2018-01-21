@@ -1,0 +1,229 @@
+<resources>
+    <string name="app_name">Sahalath</string>
+    <string name="dummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+
+    <string name="loading">Loading.....</string>
+
+    <!-- - - - - - - - - - - - -Login Activity- - - - - - - - - - - - - - - - -->
+    <string name="login">Login</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="skip">Skip  >></string>
+    <string name="alert_no_empty_field">Required field is empty</string>
+    <string name="alert_invalid_password">Password should be minimum of 6 characters</string>
+    <string name="alert_invalid_email">Invalid Email</string>
+    <string name="alert_no_internet">Network Unavailable</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="login_success">Login Success</string>
+    <string name="server_error_connection">Server connection error!!!</string>
+    <string name="this_feature_not_available">This feature is not available now</string>
+    <string name="select_communication">Select a communication company</string>
+    <string name="select_occupation">Select an occupation</string>
+
+    <!-- - - - - - - - - - - - - - Drawer- - - - - - - - - - - - - - - - -->
+    <string name="home">Home</string>
+    <string name="about">About Us</string>
+    <string name="order_history">Order History</string>
+    <string name="sign_regi">SignIn / Registration</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="notification">Notification</string>
+    <string name="offers">Offers</string>
+    <string name="logout">Logout</string>
+    <string name="pending_order">Pending Orders</string>
+    <string name="accepted_orders">Accepted Orders</string>
+    <string name="navigation_orders">Navigation</string>
+    <string name="pending_req">Pending Requests</string>
+    <string name="canceled_orders">Cancelled Orders</string>
+    <string name="completed_works">Completed Works</string>
+    <string-array name="driver_status">
+        <item>Online</item>
+        <item>Offline</item>
+    </string-array>
+    <string name="accepted_works">Accepted Works</string>
+    <string name="canceled_works">Cancelled Works</string>
+
+
+
+    <!-- - - - - - - - - - - - - - Popup Dialog - - - - - - - - - - - - - - - - -->
+    <string name="empty_pending_order">Sorry, You do not have pending order</string>
+
+    <string name="empty_accepted_order">Sorry, You do not have accepted order</string>
+
+    <string name="empty_cancelled_order">Sorry, You do not have cancelled order</string>
+
+    <string name="ok">Ok</string>
+    
+    
+    <!-- - - - - - - - - - - - - - Network- - - - - - - - - - - - - - - - -->
+    <string name="no_internet">>No Internet Available. Please Check the Connection</string>
+
+
+    <!-- - - - - - - - - - - - - - Bottombar- - - - - - - - - - - - - - - - -->
+    <string name="most_selling_dishes">Most Selling Dishes</string>
+    <string name="search">Search</string>
+
+    <!-- - - - - - - - - - - - - - Restaurant List- - - - - - - - - - - - - - - - -->
+    <string name="restaurants">Restaurants</string>
+    <string name="new_restaurants">New Restaurants</string>
+    <string name="all_restaurants">All Restaurants</string>
+
+    <string name="list_all">List All</string>
+    <string name="quantity">Qty</string>
+    <string name="add_to_cart">Add to Cart</string>
+
+    <!-- - - - - - - - - - - - - - Dynamic Search- - - - - - - - - - - - - - - - -->
+    <string name="dynamic_search">Dynamic Search</string>
+    <string name="enter_keyword">Enter Keyword..</string>
+
+    <!-- - - - - - - - - - - - - - Most Selling Restaurant- - - - - - - - - - - - - - - - -->
+    <string name="most_selling_restaurant">Most Selling Dishes</string>
+
+
+    <!-- - - - - - - - - - - - - - my Cart- - - - - - - - - - - - - - - - -->
+    <string name="my_cart">My Cart</string>
+    <string name="place_order">Place Order</string>
+    <string name="total">Total :</string>
+    <string name="remove">Remove</string>
+
+    <!-- - - - - - - - - - - - - - Offers- - - - - - - - - - - - - - - - -->
+    <string name="offers_title">Offers</string>
+
+
+    <!-- - - - - - - - - - - - - - my Account- - - - - - - - - - - - - - - - -->
+    <string name="my_account">My Account</string>
+    <string name="edit_info">Edit Info</string>
+    <string name="driver_id">Driver ID</string>
+    <string name="driver_licence_id">Driver Licence ID</string>
+    <string name="save">Save</string>
+    <string name="change_password">Change Password</string>
+
+    <!-- - - - - - - - - - - - - - Order History- - - - - - - - - - - - - - - - -->
+    <string name="order_id">Order ID:</string>
+    <string name="order_placed">Order Placed:</string>
+    <string name="status">Status:</string>
+
+    <string name="track_your_orders">Track Your Orders</string>
+    <string name="navigation_not_available">Navigation Not Available</string>
+
+
+    <!-- - - - - - - - - - - - - - Contact US- - - - - - - - - - - - - - - - -->
+    <string name="name">Name</string>
+
+    <string name="location">Location</string>
+    <string name="emailId">Email ID</string>
+    <string name="telephone">Telephone</string>
+    <string name="message">Message</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+
+    <!-- - - - - - - - - - - - - - Change Password- - - - - - - - - - - - - - - - -->
+    <string name="current_pass">Current Password</string>
+
+    <string name="new_pass">New Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+
+    <!-- - - - - - - - - - - - - - Register- - - - - - - - - - - - - - - - -->
+    <string name="register">Register</string>
+    <string name="navigation">Navigation</string>
+    <string name="fll_name">Full Name</string>
+    <string name="flat_no">Name</string>
+    <string name="block">Block</string>
+    <string name="street">Street</string>
+    <string name="avenue">Avenue</string>
+    <string name="building">Building</string>
+    <string name="floor">Floor</string>
+    <string name="apartment_number">Apartment Number</string>
+    <string name="directions">Directions(Optional)</string>
+    <string name="gender">Gender</string>
+    <string name="occupation">Occupation</string>
+    <string name="palce_gover">Place / Governorate</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="home_number">House Phone</string>
+    <string name="address">Address</string>
+    <string name="paci_number">PACI Number</string>
+    <string-array name="gender_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="first_name_empty">First name can not be empty</string>
+    <string name="last_name_empty">Last name can not be empty</string>
+    <string name="password_field_empty">Password fields can not be empty</string>
+    <string name="password_miss_match">Passwords miss match</string>
+    <string name="email_empty">Email field is empty</string>
+    <string name="select_company">Select a Communication Company</string>
+    <string name="select_gender">Select a gender</string>
+    <string name="mobile_no_empty">Mobile Number Field is empty</string>
+    <string name="home_no_empty">Home phone NumberField is empty</string>
+    <string name="apartments">Apartment</string>
+    <string name="office">Office</string>
+    <string name="house">House</string>
+    <!-- - - - - - - - - - - - - - Driver Pending Order- - - - - - - - - - - - - - - - -->
+    <string name="restaurant_field">Restaurant  :</string>
+    <string name="location_field">Location :</string>
+    <string name="customer_name_field">Customer :</string>
+    <string name="telephone_field">Telephone :</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="order_details">Order Details</string>
+    <string name="building_field">Building :</string>
+    <string name="block_field">Block :</string>
+    <string name="place_field">Place :</string>
+    <string name="requested_time">Requested delivery time:</string>
+    <string name="report_issue">Report Issue</string>
+    <string name="call_admin">Call Admin</string>
+    <string name="update_status">Update Order Status</string>
+    <string name="call_support">Call Support</string>
+    <string name="send_message">Send Message</string>
+
+
+    <!-- - - - - - - - - - - - - - Driver Pending Order- - - - - - - - - - - - - - - - -->
+    <string name="service_requests">Service Requests</string>
+    <string name="service_id">Serv Id :</string>
+    <string name="driver">Driver :</string>
+    <string name="issue_type">Type :</string>
+    <string name="message_field">Message :</string>
+    <string name="welcome">Welcome</string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+    <string name="accept_order">Accept Order</string>
+
+    <!-- - - - - - - - - - - - - -Food Details Page- - - - - - - - - - - - - - - - -->
+    <string name="ratings">Ratings</string>
+    <string name="view_reviews">View Reviews</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="order_now">Order Now</string>
+    <string name="rating_and_review">Rating and review</string>
+    <string name="write_review">Rate and write a Review</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="write_review_now">Write a Review</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!-- - - - - - - - - - - - - -Service BOy Order List Page- - - - - - - - - - - - - - - - -->
+    <string name="assigned_works">Assigned Works</string>
+    <string name="work_details">Work Details</string>
+    <string name="complaint_id">Complaint Id :</string>
+    <string name="driver_name">Driver Name :</string>
+    <string name="view_all_assigned_works">View All Assigned Works</string>
+    <string name="update_service">Update Service Status</string>
+    <string name="update">Update</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="email">E-mail </string>
+    <string name="civil_id">Civil Id</string>
+
+    <!-- - - - - - - - - - - - - - Google map key - - - - - - - - - - - - - - - - -->
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyDRqre3ZwhZqPEx8raewOonMfXwfSD3Eg0
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation_fragment">Map</string>
+</resources>

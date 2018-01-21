@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DrawerScrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/DrawerLinearLayout">
+
+        <Spinner
+             android:id="@+id/spinner_drawer_driver_status"
+             android:layout_width="match_parent"
+             android:layout_height="48dp"
+             android:background="@drawable/bg_drawer_spinner" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView2"-->
+            <!--style="@style/DrawerTextView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Driver Account"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--  <View style="@style/DrawerLine" />-->
+
+        <TextView
+            android:id="@+id/tv_driver_drawer_pending_order"
+            style="@style/DrawerTextView"
+            android:text="@string/pending_order" />
+
+        <View style="@style/DrawerLine" />
+
+        <TextView
+            android:id="@+id/tv_driver_drawer_accepted_orders"
+            style="@style/DrawerTextView"
+            android:text="@string/accepted_orders" />
+
+        <View style="@style/DrawerLine" />
+
+        <TextView
+            android:id="@+id/tv_driver_drawer_canceled_orders"
+            style="@style/DrawerTextView"
+            android:text="@string/canceled_orders" />
+
+        <View style="@style/DrawerLine" />
+
+
+
+        <TextView
+            android:id="@+id/tv_driver_drawer_navigation_orders"
+            style="@style/DrawerTextView"
+            android:text="@string/navigation_orders" />
+
+        <View style="@style/DrawerLine" />
+
+
+        <TextView
+            android:id="@+id/tv_driver_drawer_my_account"
+            style="@style/DrawerTextView"
+            android:text="@string/my_account" />
+
+        <View style="@style/DrawerLine" />
+
+        <TextView
+            android:id="@+id/tv_driver_drawer_logout"
+            style="@style/DrawerTextView"
+            android:text="@string/logout" />
+
+    </LinearLayout>
+</ScrollView>

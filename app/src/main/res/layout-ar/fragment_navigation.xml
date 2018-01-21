@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.mawaqaa.sahalath.aadriver.fragment.NavigationFragment">
+
+    <TextView
+        android:id="@+id/textViewNavigation"
+        style="@style/CommonTitle"
+        android:text="@string/navigation" />
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:map="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:id="@+id/map"-->
+        <!--android:layout_below="@+id/textViewNavigation"-->
+        <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/container"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginEnd="10dp"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--tools:context="com.mawaqaa.sahalath.aadriver.fragment.NavigationFragment" />-->
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:background="@drawable/backgroundofmapplusshap"
+        android:layout_below="@+id/textViewNavigation"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/container"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        tools:context="com.mawaqaa.sahalath.aadriver.fragment.NavigationFragment" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:id="@+id/container"
+
+        android:background="@drawable/box_black1"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#FFF"
+            android:layout_gravity="center_vertical"
+            android:text="UPDATE SERVICE STATUS"
+            />
+
+        <Spinner
+            android:background="@drawable/custom_spinner_background"
+            android:spinnerMode="dropdown"
+            android:id="@+id/spinnerCustomStatus"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

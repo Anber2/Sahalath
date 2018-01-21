@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DrawerScrollView">
+
+    <LinearLayout style="@style/DrawerLinearLayout">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Custumer Account"
+            android:layout_gravity="center"
+            style="@style/DrawerTextView"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cst_drawer_home"
+            style="@style/DrawerTextView"
+            android:gravity="start|center_vertical"
+            android:text="@string/home" />
+
+        <View style="@style/DrawerLine"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_cst_drawer_about"
+            style="@style/DrawerTextView"
+            android:gravity="start|center_vertical"
+            android:text="@string/about" />
+
+        <View style="@style/DrawerLine" />
+
+        <TextView
+            android:id="@+id/tv_cst_drawer_account"
+            style="@style/DrawerTextView"
+            android:gravity="start|center_vertical"
+            android:text="@string/my_account" />
+
+        <View style="@style/DrawerLine" />
+
+        <TextView
+            android:id="@+id/tv_cst_drawer_cart"
+            style="@style/DrawerTextView"
+            android:gravity="start|center_vertical"
+            android:text="@string/my_cart" />
+
+        <View style="@style/DrawerLine" />
+
+        <TextView
+            android:id="@+id/tv_cst_drawer_history"
+            android:gravity="start|center_vertical"
+            style="@style/DrawerTextView"
+            android:text="@string/order_history" />
+
+        <View style="@style/DrawerLine" />
+
+        <TextView
+            android:id="@+id/tv_cst_drawer_registration"
+            style="@style/DrawerTextView"
+            android:gravity="start|center_vertical"
+            android:text="@string/sign_regi" />
+
+        <View style="@style/DrawerLine" />
+
+        <TextView
+            android:id="@+id/tv_cst_drawer_contact_us"
+            style="@style/DrawerTextView"
+            android:gravity="start|center_vertical"
+            android:text="@string/contact_us" />
+
+        <View style="@style/DrawerLine" />
+
+        <TextView
+            android:id="@+id/tv_cst_drawer_notification"
+            style="@style/DrawerTextView"
+            android:gravity="start|center_vertical"
+            android:text="@string/notification" />
+
+        <View style="@style/DrawerLine" />
+
+        <TextView
+            android:id="@+id/tv_cst_drawer_offers"
+            style="@style/DrawerTextView"
+            android:gravity="start|center_vertical"
+            android:text="@string/offers" />
+
+        <View style="@style/DrawerLine" />
+
+        <TextView
+            android:id="@+id/tv_cst_drawer_logout"
+            style="@style/DrawerTextView"
+            android:gravity="start|center_vertical"
+            android:text="@string/logout" />
+
+        <View style="@style/DrawerLine" />
+    </LinearLayout>
+</ScrollView>

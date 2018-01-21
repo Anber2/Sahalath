@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:layout_marginStart="16dp"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/tv_single_review_rating"
+        style="@style/textColorAndStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_theme_light_rectangle"
+        android:drawablePadding="2dp"
+        android:drawableEnd="@drawable/ic_review_small_star"
+        android:padding="4dp"
+        android:text="5.0" />
+
+    <TextView
+        android:id="@+id/tv_single_review_heading"
+        style="@style/textColorAndStyle"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/tv_single_review_rating"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/tv_single_review_rating"
+        android:gravity="center_vertical"
+        android:text="Revieew Heading WIll be hrere"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_single_review_desc"
+        style="@style/textColorAndStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_single_review_rating"
+        android:layout_marginTop="4dp"
+        android:maxLines="3"
+        android:text="@string/dummy" />
+
+    <TextView
+        android:id="@+id/tv_single_review_person"
+        style="@style/textColorAndStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_single_review_desc"
+        android:layout_marginTop="16dp"
+        android:text="Johnson Samuel" />
+
+    <TextView
+        android:id="@+id/tv_single_review_time"
+        style="@style/textColorAndStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_single_review_person"
+        android:layout_toEndOf="@+id/tv_single_review_person"
+        android:text="82/23/2017" />
+
+    <TextView
+        android:id="@+id/tv_dislike_count"
+        style="@style/textColorAndStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tv_single_review_person"
+        android:gravity="center"
+        android:text="3" />
+
+    <ImageButton
+        android:id="@+id/btn_single_review_dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_alignTop="@+id/tv_single_review_person"
+        android:layout_toStartOf="@id/tv_dislike_count"
+        android:background="@drawable/ic_review_unlike" />
+
+    <TextView
+        android:id="@+id/tv_review_like_count"
+        style="@style/textColorAndStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_single_review_person"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@id/btn_single_review_dislike"
+        android:gravity="center"
+        android:text="9" />
+
+    <ImageButton
+        android:id="@+id/btn_review_like"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_single_review_person"
+        android:layout_toStartOf="@+id/tv_review_like_count"
+        android:background="@drawable/ic_review_like" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_theme"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_single_review_person"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"/>
+</RelativeLayout>

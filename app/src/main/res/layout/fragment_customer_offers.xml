@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/offers_title"
+        style="@style/CommonTitle"
+        android:layout_alignParentTop="true"
+        android:text="@string/offers" />
+
+    <ListView
+        android:id="@+id/list_view_offers"
+        style="@style/scrollBarDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:divider="@color/color_theme"
+        android:dividerHeight="1dp"
+        android:padding="12dp"
+        android:visibility="visible"
+        android:layout_below="@+id/offers_title">
+
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_total_amount_offers"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_black_transparent">
+
+        <TextView
+            android:id="@+id/tv_offers_total"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/total"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/offers_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/btn_place_order_offers"
+            android:layout_toEndOf="@+id/tv_cart_total"
+            android:gravity="center"
+            android:text="KD. 2225.00"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_place_order_offers"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/selector_bg_theme_light"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/place_order"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</RelativeLayout>

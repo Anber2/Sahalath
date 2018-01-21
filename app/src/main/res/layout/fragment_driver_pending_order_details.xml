@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/CommonTitle"
+        android:text="@string/order_details" />
+
+    <ScrollView
+        style="@style/scrollBarDefaultTransparent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_scrollview"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/order_id"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_id_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toEndOf="@id/tv_pending_order_details_id"
+                        android:text="#1234569876"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_rest_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_pending_order_details_id"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/restaurant_field"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_rest_name_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_pending_order_details_rest_name"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@id/tv_pending_order_details_rest_name"
+                        android:text="Copper Chimmeny"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_rest_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_pending_order_details_rest_name"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/location_field"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_rest_location_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_pending_order_details_rest_location"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@id/tv_pending_order_details_rest_name"
+                        android:text="Gulf Street,Salmiya"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_cst_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_pending_order_details_rest_location"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/customer_name_field"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_cst_name_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_pending_order_details_cst_name"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@id/tv_pending_order_details_rest_name"
+                        android:text="John Honai"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_cst_telephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_pending_order_details_cst_name"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/telephone_field"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_cst_telephone_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_pending_order_details_cst_telephone"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@id/tv_pending_order_details_rest_name"
+                        android:text="0222458657"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_cst_building"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_pending_order_details_cst_telephone"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/building_field"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_cst_building_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_pending_order_details_cst_building"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@id/tv_pending_order_details_rest_name"
+                        android:text="Skyline Apartments"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_cst_block"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_pending_order_details_cst_building"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/block_field"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_cst_block_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_pending_order_details_cst_block"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@id/tv_pending_order_details_rest_name"
+                        android:text="#42,China Street"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_cst_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_pending_order_details_cst_block"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/place_field"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pending_order_details_cst_place_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_pending_order_details_cst_place"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@id/tv_pending_order_details_rest_name"
+                        android:text="Samaya"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_black_light_transperant"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_delivery_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/requested_time"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_delivery_time_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="4dp"
+                        android:gravity="center_vertical"
+                        android:text="09:30PM"
+                        android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_order_details_call_admin"
+                    style="@style/ThemedButton"
+                    android:layout_alignParentStart="true"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/call_admin" />
+
+                <Button
+                    android:id="@+id/btn_order_details_accept_order"
+                    style="@style/ThemedButton"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/accept_order" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

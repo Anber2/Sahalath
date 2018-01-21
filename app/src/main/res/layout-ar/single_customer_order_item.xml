@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp">
+
+
+
+        <com.joooonho.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgview_order_item"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food_item"
+            app:sriv_border_color="#008fea"
+            app:sriv_left_bottom_corner_radius="4dip"
+            app:sriv_left_top_corner_radius="4dip"
+            app:sriv_oval="false"
+            app:sriv_right_bottom_corner_radius="4dip"
+            app:sriv_right_top_corner_radius="4dip" />
+
+
+
+        <TextView
+            android:id="@+id/tv_order_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imgview_order_item"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/imgview_order_item"
+            android:text="Pudding"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_order_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_order_item_name"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/imgview_order_item"
+            android:text="KD 125.00"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_order_item_price"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/imgview_order_item"
+            android:text="@string/order_id"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_order_id_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_order_id"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/tv_order_id"
+            android:text="#123456"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_order_placed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_order_id"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/imgview_order_item"
+            android:text="@string/order_placed"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_order_placed_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_order_placed"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/tv_order_placed"
+            android:text="03/13/2017"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_order_placed"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/imgview_order_item"
+            android:text="@string/status"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_order_status_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_order_status"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/tv_order_status"
+            android:text="Delivered"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

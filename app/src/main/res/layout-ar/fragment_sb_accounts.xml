@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/CommonTitle"
+        android:text="@string/my_account" />
+
+    <ScrollView
+        style="@style/scrollBarDefaultTransparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_sb_account_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/et_sb_account_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingStart="4dp"
+
+                    android:text="@string/first_name"
+                    android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular" />
+
+                <EditText
+                    android:id="@+id/et_sb_account_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingStart="4dp"
+                    android:text="@string/last_name"
+                    android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular" />
+
+                <EditText
+                    android:id="@+id/et_sb_account_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingStart="4dp"
+                    android:text="@string/mobile_no"
+                    android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular" />
+
+                <EditText
+                    android:id="@+id/et_sb_account_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingStart="4dp"
+                    android:text="@string/email"
+                    android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular" />
+
+                <EditText
+                    android:id="@+id/et_sb_account_civil_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingStart="4dp"
+                    android:text="@string/civil_id"
+                    android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sb_account_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_sb_account_first_name"
+                    android:gravity="end|center_vertical"
+                    style="@style/sbAccountTextView" />
+
+                <TextView
+                    android:id="@+id/tv_sb_account_last_name"
+                    android:gravity="end|center_vertical"
+                    style="@style/sbAccountTextView" />
+
+                <TextView
+                    android:id="@+id/tv_sb_account_mobile"
+                    android:gravity="end|center_vertical"
+                    style="@style/sbAccountTextView" />
+
+                <TextView
+                    android:id="@+id/tv_sb_account_email"
+                    android:gravity="end|center_vertical"
+                    style="@style/sbAccountTextView" />
+
+                <TextView
+                    android:id="@+id/tv_sb_account_civil_id"
+                    android:gravity="end|center_vertical"
+                    style="@style/sbAccountTextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_sb_account_edit_info"
+                    style="@style/ThemedButton"
+
+                    android:text="@string/edit_info" />
+
+                <Button
+                    android:id="@+id/btn_sb_account_save"
+                    style="@style/ThemedButton"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/save" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_sb_account_change_pass"
+                style="@style/ThemedButton"
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/change_password" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

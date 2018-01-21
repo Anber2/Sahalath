@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/CommonTitle"
+        android:text="@string/notification" />
+
+    <ListView
+        android:id="@+id/list_view_notifications"
+        style="@style/scrollBarDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_theme"
+        android:dividerHeight="1dp"
+        android:padding="12dp"
+        android:visibility="visible">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_accepted_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp">
+
+        <View
+            android:id="@+id/check_box_accepted_order_item"
+            android:layout_width="1dp"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/check_box_accepted_order_item"
+            android:text="@string/order_id"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_id_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/tv_accepted_order_id"
+            android:text="#1234569876"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_rest_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_accepted_order_id"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/check_box_accepted_order_item"
+            android:text="@string/restaurant_field"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_rest_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_accepted_order_rest_name"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/tv_accepted_order_rest_name"
+            android:text="Copper Chimmeny"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_rest_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_accepted_order_rest_name"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/check_box_accepted_order_item"
+            android:text="@string/location_field"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_rest_location_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_accepted_order_rest_location"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/tv_accepted_order_rest_name"
+            android:text="Gulf Street,Salmiya"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_cst_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_accepted_order_rest_location"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/check_box_accepted_order_item"
+            android:text="@string/customer_name_field"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_cst_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_accepted_order_cst_name"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/tv_accepted_order_rest_name"
+            android:text="John Honai"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_cst_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_accepted_order_cst_name"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/check_box_accepted_order_item"
+            android:text="@string/location_field"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_cst_location_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_accepted_order_cst_location"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/tv_accepted_order_rest_name"
+            android:text="China Street,Salmiya"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_cst_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_accepted_order_cst_location"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/check_box_accepted_order_item"
+            android:text="@string/telephone_field"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_accepted_order_cst_telephone_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_accepted_order_cst_telephone"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/tv_accepted_order_rest_name"
+            android:text="0222458657"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/CommonTitle"
+        android:text="@string/work_details" />
+
+    <ScrollView
+        style="@style/scrollBarDefaultTransparent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_scrollview"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <CheckBox
+                    android:id="@+id/check_box_assigned_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="20dp"
+                    android:button="@drawable/check_box_selector" />
+
+                <TextView
+                    android:id="@+id/tv_assigned_details_complaint_id_tag"
+                    style="@style/textColorAndStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/check_box_assigned_details"
+                    android:layout_toEndOf="@+id/check_box_assigned_details"
+                    android:text="@string/complaint_id"
+                    android:gravity="end|center_vertical"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_assigned_details_complaint_id_value"
+                    style="@style/textColorAndStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_assigned_details_complaint_id_tag"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/tv_assigned_details_complaint_id_tag"
+                    android:text="#1233455"
+                    android:gravity="end|center_vertical"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_assigned_details_driver_name_tag"
+                    style="@style/textColorAndStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_assigned_details_complaint_id_tag"
+                    android:layout_marginTop="8dp"
+                    android:gravity="end|center_vertical"
+                    android:layout_toEndOf="@+id/check_box_assigned_details"
+                    android:text="@string/driver_name"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_assigned_details_driver_name_value"
+                    style="@style/textColorAndStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_assigned_details_driver_name_tag"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/tv_assigned_details_driver_name_tag"
+                    android:text="Alexis"
+                    android:gravity="end|center_vertical"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_assigned_details_location_tag"
+                    style="@style/textColorAndStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_assigned_details_driver_name_tag"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end|center_vertical"
+                    android:layout_toEndOf="@+id/check_box_assigned_details"
+                    android:text="@string/location_field"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_assigned_details_location_value"
+                    style="@style/textColorAndStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_assigned_details_location_tag"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/tv_assigned_details_location_tag"
+                    android:text="Saudi Arabia"
+                    android:gravity="end|center_vertical"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_assigned_details_telephone_tag"
+                    style="@style/textColorAndStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_assigned_details_location_tag"
+                    android:layout_marginTop="4dp"
+                    android:gravity="end|center_vertical"
+                    android:layout_toEndOf="@id/check_box_assigned_details"
+                    android:text="@string/telephone_field"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_assigned_details_telephone_value"
+                    style="@style/textColorAndStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_assigned_details_telephone_tag"
+                    android:layout_toEndOf="@+id/tv_assigned_details_telephone_tag"
+                    android:text="9447732307"
+                    android:gravity="end|center_vertical"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_assigned_details_message_tag"
+                    style="@style/textColorAndStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_assigned_details_telephone_tag"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/check_box_assigned_details"
+                    android:text="@string/message"
+                    android:gravity="end|center_vertical"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_assigned_details_message_values"
+                    style="@style/textColorAndStyle"
+                    android:gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_assigned_details_message_tag"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/check_box_assigned_details"
+                    android:text="@string/dummy" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_assigned_details_button"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_work_details_accept"
+                    style="@style/ThemedButton"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="@string/accept" />
+
+                <Button
+                    android:id="@+id/btn_work_details_reject"
+                    style="@style/ThemedButton"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="@string/reject" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

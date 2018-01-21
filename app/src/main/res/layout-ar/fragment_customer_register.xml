@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/CommonTitle"
+        android:text="@string/register" />
+
+    <ScrollView
+        style="@style/scrollBarDefaultTransparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner_reg_user_type"
+                style="@style/SpinnerCommonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_reg_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_reg_full_name"
+                    style="@style/ContactUsPageEditText"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/fll_name" />
+
+                <EditText
+                    android:id="@+id/et_reg_mail"
+                    style="@style/ContactUsPageEditText"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/emailId" />
+
+                <EditText
+                    android:id="@+id/et_reg_telephone"
+                    style="@style/ContactUsPageEditText"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/telephone" />
+
+                <EditText
+                    android:id="@+id/et_flat_no"
+                    style="@style/ContactUsPageEditText"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/flat_no" />
+
+                <EditText
+                    android:id="@+id/et_block"
+                    style="@style/ContactUsPageEditText"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/block" />
+
+                <Spinner
+                    android:id="@+id/spinner_reg_place"
+                    style="@style/SpinnerCommonTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reg_submit"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_submit_register"
+                    style="@style/ThemedButton"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="@string/submit" />
+
+                <Button
+                    android:id="@+id/btn_reset_register"
+                    style="@style/ThemedButton"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="@string/reset" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

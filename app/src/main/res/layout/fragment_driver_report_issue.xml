@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/CommonTitle"
+        android:text="@string/report_issue" />
+
+    <Spinner
+        android:id="@+id/spinner_issue_type"
+        style="@style/SpinnerCommonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/et_issue_message"
+        style="@style/ContactUsPageEditText"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="top|start"
+        android:hint="@string/message"
+        android:minLines="6"
+        android:padding="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_issue_send_message"
+            style="@style/ThemedButton"
+            android:layout_alignParentStart="true"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/send_message" />
+
+        <Button
+            android:id="@+id/btn_issue_call_support"
+            style="@style/ThemedButton"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/call_support" />
+    </RelativeLayout>
+
+</LinearLayout>

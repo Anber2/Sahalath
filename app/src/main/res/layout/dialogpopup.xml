@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/colorPurple"
+    android:layout_gravity="center"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:id="@+id/textPopup"
+        android:background="@android:color/transparent"
+        android:textSize="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/btnOkDismissDialog"
+        android:background="@android:color/transparent"
+        android:textColor="#fff"
+        android:text="@string/ok"
+        android:textSize="18dp"
+        android:layout_below="@+id/textPopup"/>
+
+</RelativeLayout>

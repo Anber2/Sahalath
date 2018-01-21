@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+
+        <com.joooonho.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_rest_menu_cat"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rest_one"
+            app:sriv_border_color="#008fea"
+            app:sriv_left_bottom_corner_radius="4dip"
+            app:sriv_left_top_corner_radius="4dip"
+            app:sriv_oval="false"
+            app:sriv_right_bottom_corner_radius="4dip"
+            app:sriv_right_top_corner_radius="4dip" />
+
+
+        <TextView
+            android:id="@+id/tv_rest_menu_cat_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_rest_menu_cat"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/img_rest_menu_cat"
+            android:text="DESSERTS"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rest_menu_items_in_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/img_rest_menu_cat"
+            android:text="Chocolates, Cheese Cakes, Pudding, Banana Foster"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/btn_list_all_menu"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@id/img_rest_menu_cat"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/img_rest_menu_cat"
+            android:background="@drawable/selector_bg_theme_light"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/list_all"
+            android:textAppearance="@style/TextAppearance.FontPath.Roboto.Regular"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

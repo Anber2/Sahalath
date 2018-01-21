@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="148dp"
+    android:layout_marginStart="16sp"
+    android:layout_marginEnd="16sp"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/bg_theme_dark_rectangle"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_food_review_header_food_name"
+        style="@style/textColorAndStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/food_review_header_rating"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/img_food_review_header"
+        android:text="pudding"
+        android:textAllCaps="true"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/food_review_header_rating"
+        style="@style/rating_bar_white"
+        android:layout_above="@+id/tv_food_review_header_rating_count"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/img_food_review_header"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/tv_food_review_header_rating_count"
+        style="@style/textColorAndStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/img_food_review_header"
+        android:gravity="center"
+        android:text="12345678 Ratings"
+        android:textSize="16sp" />
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/img_food_review_header"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food_item"
+        app:sriv_border_color="@android:color/white"
+        app:sriv_border_width="2dp"
+        app:sriv_left_bottom_corner_radius="4dip"
+        app:sriv_left_top_corner_radius="4dip"
+        app:sriv_oval="false"
+        app:sriv_right_bottom_corner_radius="4dip"
+        app:sriv_right_top_corner_radius="4dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_assigned_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp">
+
+        <CheckBox
+            android:id="@+id/check_box_assigned_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:button="@drawable/check_box_selector" />
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_id_tag"
+            style="@style/textColorAndStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/check_box_assigned_item"
+            android:text="@string/service_id"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_id_value"
+            style="@style/textColorAndStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_assigned_service_req_id_tag"
+            android:layout_toEndOf="@id/tv_assigned_service_req_id_tag"
+            android:text="#2345671"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_driver_tag"
+            style="@style/serviceRequestTextFields"
+            android:layout_below="@id/tv_assigned_service_req_id_tag"
+            android:layout_toEndOf="@id/check_box_assigned_item"
+            android:text="@string/driver" />
+
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_telephone_tag"
+            style="@style/serviceRequestTextFields"
+            android:layout_below="@id/tv_assigned_service_req_driver_tag"
+            android:layout_toEndOf="@id/check_box_assigned_item"
+            android:text="@string/telephone_field" />
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_telephone_value"
+            style="@style/serviceRequestTextFields"
+            android:layout_alignTop="@id/tv_assigned_service_req_telephone_tag"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/tv_assigned_service_req_telephone_tag"
+            android:text="9955448774" />
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_location_tag"
+            style="@style/serviceRequestTextFields"
+            android:layout_below="@id/tv_assigned_service_req_telephone_tag"
+            android:layout_toEndOf="@id/check_box_assigned_item"
+            android:text="@string/location_field" />
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_location_value"
+            style="@style/serviceRequestTextFields"
+            android:layout_alignTop="@id/tv_assigned_service_req_location_tag"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/tv_assigned_service_req_telephone_tag"
+            android:text="China Town" />
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_issue_type_tag"
+            style="@style/serviceRequestTextFields"
+            android:layout_below="@id/tv_assigned_service_req_location_tag"
+            android:layout_toEndOf="@id/check_box_assigned_item"
+            android:text="@string/issue_type" />
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_driver_value"
+            style="@style/serviceRequestTextFields"
+            android:layout_alignTop="@id/tv_assigned_service_req_driver_tag"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/tv_assigned_service_req_telephone_tag"
+            android:text="JOhn David" />
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_issue_type_value"
+            style="@style/serviceRequestTextFields"
+            android:layout_alignTop="@id/tv_assigned_service_req_issue_type_tag"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/tv_assigned_service_req_telephone_tag"
+            android:text="Engine Down" />
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_message_tag"
+            style="@style/serviceRequestTextFields"
+            android:layout_below="@id/tv_assigned_service_req_issue_type_tag"
+            android:layout_toEndOf="@id/check_box_assigned_item"
+            android:text="@string/message_field" />
+
+        <TextView
+            android:id="@+id/tv_assigned_service_req_message_value"
+            style="@style/serviceRequestTextFields"
+            android:layout_alignTop="@id/tv_assigned_service_req_message_tag"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/tv_assigned_service_req_telephone_tag"
+            android:maxLines="2"
+            android:text="@string/dummy" />
+    </RelativeLayout>
+</LinearLayout>

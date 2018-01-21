@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_accepted_title"
+        style="@style/CommonTitle"
+        android:text="@string/accepted_works" />
+
+    <ListView
+        android:id="@+id/list_view_sb_accepted_works"
+        style="@style/scrollBarDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_accepted_title"
+        android:layout_marginBottom="44dp"
+        android:divider="@color/color_theme"
+        android:dividerHeight="1dp"
+        android:padding="12dp"
+        android:visibility="visible" />
+
+
+
+</RelativeLayout>
